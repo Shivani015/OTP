@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidPermission</string>
+    <string name="enter_number">enter Number</string>
+    <string name="enter_your_message">enter your message</string>
+    <string name="send">Send</string>
+    <string name="enter_your_number">enter your number</string>
+    <string name="otp_confirmation">OTP confirmation</string>
+    <string name="enter_here">enter here</string>
+    <string name="button">Button</string>
+    <string name="enter_here">enter here</string>
+</resources>
