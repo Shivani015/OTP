@@ -18,10 +18,10 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     private EditText phoneEditText, messageEditText;
-    private Button sendbutton;
+    private Button send;
     private static final int REQUEST_CODE_SMS = 101;
 
-//    @SuppressLint("WrongViewCast")
+//    @SuppressLint("WrongViewCast"
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         phoneEditText = findViewById(R.id.num);
         messageEditText = findViewById(R.id.messageET);
-        sendbutton = findViewById(R.id.sendBtn);
+        send = findViewById(R.id.sendBtn);
         String[] permission = {
                 Manifest.permission.SEND_SMS
 //                Manifest.permission.CAMERA
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             ActivityCompat.requestPermissions(MainActivity.this, permission, REQUEST_CODE_SMS);
         }
-         sendbutton.setOnClickListener(new View.OnClickListener() {
+         send.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
                  String phoneNo =phoneEditText.getText().toString().trim();
